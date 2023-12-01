@@ -11,9 +11,9 @@ const Navbar = () => {
 
     //using location hook to see which tab of the navbar is active
     let location = useLocation();
-    useEffect(() => {
-        console.log(location.pathname);
-      }, [location]);
+    // useEffect(() => {
+    //     console.log(location.pathname);
+    //   }, [location]);
   return (
     <>
       <ContentWrapper>
