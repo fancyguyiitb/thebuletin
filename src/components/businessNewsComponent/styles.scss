@@ -1,3 +1,32 @@
-.businessCard {
-    // width: 33vw;
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fill img {
+  flex-shrink: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.businessNewsCard {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+}
+.businessNewsCard .card-body {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.vertcialCardImg {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }

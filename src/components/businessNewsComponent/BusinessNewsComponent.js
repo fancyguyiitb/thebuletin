@@ -3,99 +3,138 @@ import "./styles.scss";
 import cardPlaceholder from "../../assets/placeholder286x180.png";
 
 const BusinessNewsComponent = (props) => {
-  // console.log(props);
+  console.log(props);
+  let { businessArticlesArray } = props;
 
   return (
     <div className="row">
       <div className="col-md-4">
-        <div className="card businessCard">
-          <img src={cardPlaceholder} alt="" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">test</h5>
-            <p className="card-text">test</p>
-            <div className="cardEndIcons">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="/"
-                className="btn btn-outline-success btn-sm"
-              >
-                Read More
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16"
-                width="12"
-                viewBox="0 0 384 512"
-                className="mx-2"
-              >
-                <path
-                  fill="#ff0059"
-                  d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
-                />
-              </svg>
+        <div
+          class="card mb-3 businessNewsCard"
+          // style={{ "max-width": "540px" }}
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4 fill">
+              <img
+                src={businessArticlesArray[2]?.multimedia[1].url}
+                class="card-img vertcialCardImg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{businessArticlesArray[2]?.title}</h5>
+                <p class="card-text">
+                  {businessArticlesArray[2]?.abstract.slice(0, 100) + "..."}
+                </p>
+                <p class="card-text">
+                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                </p>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href={businessArticlesArray[2]?.url}
+                  className="btn btn-outline-success btn-sm"
+                >
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* <div className="col-md-4">
+        <div class="card bg-dark text-white businessNewsCard">
+          <img
+            src={businessArticlesArray[0]?.multimedia[1].url}
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">{businessArticlesArray[0]?.title}</h5>
+            <p class="card-text">
+              {businessArticlesArray[0]?.abstract.slice(0, 180) + "..."}
+            </p>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href={businessArticlesArray[2]?.url}
+              className="btn btn-success btn-sm"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+      </div> */}
+
       <div className="col-md-4">
-        <div className="card mb-3 businessCard">
-          <img src={cardPlaceholder} alt="" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">test</h5>
-            <p className="card-text">test</p>
-            <div className="cardEndIcons">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="/"
-                className="btn btn-outline-success btn-sm"
-              >
-                Read More
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16"
-                width="12"
-                viewBox="0 0 384 512"
-                className="mx-2"
-              >
-                <path
-                  fill="#ff0059"
-                  d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
-                />
-              </svg>
+        <div
+          class="card mb-3 businessNewsCard"
+          // style={{ "max-width": "540px" }}
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4 fill">
+              <img
+                src={businessArticlesArray[1]?.multimedia[1].url}
+                class="card-img vertcialCardImg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{businessArticlesArray[1]?.title}</h5>
+                <p class="card-text">
+                  {businessArticlesArray[1]?.abstract.slice(0, 100) + "..."}
+                </p>
+                <p class="card-text">
+                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                </p>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href={businessArticlesArray[2]?.url}
+                  className="btn btn-outline-success btn-sm"
+                >
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="col-md-4">
-        <div className="card businessCard">
-          <img src={cardPlaceholder} alt="" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">test</h5>
-            <p className="card-text">test</p>
-            <div className="cardEndIcons">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="/"
-                className="btn btn-outline-success btn-sm"
-              >
-                Read More
-              </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16"
-                width="12"
-                viewBox="0 0 384 512"
-                className="mx-2"
-              >
-                <path
-                  fill="#ff0059"
-                  d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
-                />
-              </svg>
+        <div
+          class="card mb-3 businessNewsCard"
+          // style={{ "max-width": "540px" }}
+        >
+          <div class="row no-gutters">
+            <div class="col-md-4 fill">
+              <img
+                src={businessArticlesArray[3]?.multimedia[1].url}
+                class="card-img vertcialCardImg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{businessArticlesArray[1]?.title}</h5>
+                <p class="card-text">
+                  {businessArticlesArray[3]?.abstract.slice(0, 100) + "..."}
+                </p>
+                <p class="card-text">
+                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                </p>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href={businessArticlesArray[3]?.url}
+                  className="btn btn-outline-success btn-sm"
+                >
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>
