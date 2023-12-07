@@ -3,7 +3,7 @@ import "./styles.scss";
 import cardPlaceholder from "../../assets/placeholder286x180.png";
 
 const SportsAndTechNewsComponent = (props) => {
-  console.log(props);
+  // console.log(props);
   let { sportsArticles, techArticles } = props;
 
   return (

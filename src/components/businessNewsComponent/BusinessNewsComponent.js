@@ -10,25 +10,25 @@ const BusinessNewsComponent = (props) => {
     <div className="row">
       <div className="col-md-4">
         <div
-          class="card mb-3 businessNewsCard"
+          className="card mb-3 businessNewsCard"
           // style={{ "max-width": "540px" }}
         >
-          <div class="row no-gutters">
-            <div class="col-md-4 fill">
+          <div className="row no-gutters">
+            <div className="col-md-4 fill">
               <img
                 src={businessArticlesArray[2]?.multimedia[1].url}
-                class="card-img vertcialCardImg"
+                className="card-img vertcialCardImg"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{businessArticlesArray[2]?.title}</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">{businessArticlesArray[2]?.title}</h5>
+                <p className="card-text">
                   {businessArticlesArray[2]?.abstract.slice(0, 100) + "..."}
                 </p>
-                <p class="card-text">
-                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                <p className="card-text">
+                  {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
                 </p>
                 <a
                   rel="noreferrer"
@@ -45,15 +45,15 @@ const BusinessNewsComponent = (props) => {
       </div>
 
       {/* <div className="col-md-4">
-        <div class="card bg-dark text-white businessNewsCard">
+        <div className="card bg-dark text-white businessNewsCard">
           <img
             src={businessArticlesArray[0]?.multimedia[1].url}
-            class="card-img"
+            className="card-img"
             alt="..."
           />
-          <div class="card-img-overlay">
-            <h5 class="card-title">{businessArticlesArray[0]?.title}</h5>
-            <p class="card-text">
+          <div className="card-img-overlay">
+            <h5 className="card-title">{businessArticlesArray[0]?.title}</h5>
+            <p className="card-text">
               {businessArticlesArray[0]?.abstract.slice(0, 180) + "..."}
             </p>
             <a
@@ -70,25 +70,25 @@ const BusinessNewsComponent = (props) => {
 
       <div className="col-md-4">
         <div
-          class="card mb-3 businessNewsCard"
+          className="card mb-3 businessNewsCard"
           // style={{ "max-width": "540px" }}
         >
-          <div class="row no-gutters">
-            <div class="col-md-4 fill">
+          <div className="row no-gutters">
+            <div className="col-md-4 fill">
               <img
                 src={businessArticlesArray[1]?.multimedia[1].url}
-                class="card-img vertcialCardImg"
+                className="card-img vertcialCardImg"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{businessArticlesArray[1]?.title}</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">{businessArticlesArray[1]?.title}</h5>
+                <p className="card-text">
                   {businessArticlesArray[1]?.abstract.slice(0, 100) + "..."}
                 </p>
-                <p class="card-text">
-                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                <p className="card-text">
+                  {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
                 </p>
                 <a
                   rel="noreferrer"
@@ -106,25 +106,25 @@ const BusinessNewsComponent = (props) => {
 
       <div className="col-md-4">
         <div
-          class="card mb-3 businessNewsCard"
+          className="card mb-3 businessNewsCard"
           // style={{ "max-width": "540px" }}
         >
-          <div class="row no-gutters">
-            <div class="col-md-4 fill">
+          <div className="row no-gutters">
+            <div className="col-md-4 fill">
               <img
                 src={businessArticlesArray[3]?.multimedia[1].url}
-                class="card-img vertcialCardImg"
+                className="card-img vertcialCardImg"
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{businessArticlesArray[1]?.title}</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">{businessArticlesArray[1]?.title}</h5>
+                <p className="card-text">
                   {businessArticlesArray[3]?.abstract.slice(0, 100) + "..."}
                 </p>
-                <p class="card-text">
-                  {/* <small class="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
+                <p className="card-text">
+                  {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
                 </p>
                 <a
                   rel="noreferrer"

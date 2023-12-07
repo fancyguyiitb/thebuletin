@@ -9,6 +9,8 @@ import CardCarousel from "../../components/cardCarousel/CardCarousel";
 import TopPicks from "../../components/topPicks/TopPicks";
 import BusinessNewsComponent from "../../components/businessNewsComponent/BusinessNewsComponent";
 import SportsAndTechNewsComponent from "../../components/sportsAndTechNewsComponent/SportsAndTechNewsComponent";
+import MovieNewsComponent from "../../components/movieNewsComponent/MovieNewsComponent";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   const tempArray = [
@@ -676,6 +678,8 @@ const Home = () => {
   const [sportsArticles, setSportsArticles] = useState([]);
   // creating articles state
   const [techArticles, setTechArticles] = useState([]);
+  // creating articles state
+  const [moviesArticles, setMoviesArticles] = useState([]);
   //creating page state
   const [page, setPage] = useState(1);
 
@@ -715,6 +719,7 @@ const Home = () => {
     fetchData("business", setBusinessArticles);
     fetchData("sports", setSportsArticles);
     fetchData("technology", setTechArticles);
+    fetchData("movies", setMoviesArticles);
   }, []);
 
   return (
@@ -749,11 +754,18 @@ const Home = () => {
           <BusinessNewsComponent businessArticlesArray={businessArticles} />
         </div>
 
+        {/* SPORTS AND TECH SECTION */}
         <SportsAndTechNewsComponent
           sportsArticles={sportsArticles}
           techArticles={techArticles}
         />
+
+        {/* MOVIES UPDATES */}
+        <MovieNewsComponent moviesArticles={moviesArticles} />
       </ContentWrapper>
+
+      {/* FOOTER */}
+      <Footer />
     </>
   );
 };
