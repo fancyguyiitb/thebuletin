@@ -680,19 +680,19 @@ const Home = () => {
   const [page, setPage] = useState(1);
 
   //getting category wise API news data
-  const getCategoryNewsData = async (category) => {
-    const apiCategoryUrl = `https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=JWDQzBXAopU3ZInzJRMA2r70nTB9HKir`;
+  // const getCategoryNewsData = async (category) => {
+  //   const apiCategoryUrl = `https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=JWDQzBXAopU3ZInzJRMA2r70nTB9HKir`;
 
-    try {
-      const response = await fetch(apiCategoryUrl);
-      //parsing data to json format
-      const json = await response.json();
-      const parsedData = json.results;
-      setArticles(parsedData);
-    } catch (error) {
-      console.log("Error: ", error);
-    }
-  };
+  //   try {
+  //     const response = await fetch(apiCategoryUrl);
+  //     //parsing data to json format
+  //     const json = await response.json();
+  //     const parsedData = json.results;
+  //     setArticles(parsedData);
+  //   } catch (error) {
+  //     console.log("Error: ", error);
+  //   }
+  // };
 
   //firing the getApiData function as soon as page loads
   useEffect(() => {
