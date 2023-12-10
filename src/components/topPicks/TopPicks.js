@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import "./styles.scss";
-import carouselPlaceholder from "../../assets/1200x500.png";
+import carouselPlaceholder from "../../assets/favicon.png";
 
 const TopPicks = (props) => {
   let { usArticlesArray } = props;
