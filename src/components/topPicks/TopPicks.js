@@ -5,7 +5,6 @@ import carouselPlaceholder from "../../assets/1200x500.png";
 
 const TopPicks = (props) => {
   let { usArticlesArray } = props;
-  console.log(props);
   // // creating articles state
   // const [usArticles, setUsArticles] = useState([]);
 

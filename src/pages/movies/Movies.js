@@ -1,10 +1,10 @@
 import React from 'react'
 import CategoryPage from '../../components/categoryPage/CategoryPage'
 
-const World = () => {
+const Movies = () => {
   return (
-    <CategoryPage category="world" title="World"/>
+    <CategoryPage category="movies" title="Movies"/>
   )
 }
 
-export default World
+export default Movies

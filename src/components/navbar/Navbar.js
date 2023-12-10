@@ -50,23 +50,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/business">
-                  Business
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/technology">
-                  Technology
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/education">
                   Education
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/health">
-                  Health
                 </Link>
               </li>
               <li className="nav-item">

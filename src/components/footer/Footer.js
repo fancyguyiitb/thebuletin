@@ -42,16 +42,7 @@ const Footer = () => {
                   <Link to="/politics">Politics</Link>
                 </p>
                 <p>
-                  <Link to="/business">Business</Link>
-                </p>
-                <p>
-                  <Link to="/technology">Technology</Link>
-                </p>
-                <p>
                   <Link to="/education">Education</Link>
-                </p>
-                <p>
-                  <Link to="/health">Health</Link>
                 </p>
                 <p>
                   <Link to="/movies">Movies</Link>

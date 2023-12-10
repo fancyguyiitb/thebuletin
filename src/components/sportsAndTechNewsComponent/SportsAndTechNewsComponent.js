@@ -13,9 +13,6 @@ const SportsAndTechNewsComponent = (props) => {
         <div className="col-md-6">
           <div className="worldNewsTitle mb-3">
             <h3>Health News</h3>
-            <button type="button" className="btn btn-danger btn-sm">
-              See All
-            </button>
           </div>
           <div className="row">
             {/* First SPorts Card */}
@@ -110,9 +107,6 @@ const SportsAndTechNewsComponent = (props) => {
         <div className="col-md-6">
           <div className="worldNewsTitle mb-3">
             <h3>Tech News</h3>
-            <button type="button" className="btn btn-danger btn-sm">
-              See All
-            </button>
           </div>
           <div className="row">
             {/* First Tech Card */}

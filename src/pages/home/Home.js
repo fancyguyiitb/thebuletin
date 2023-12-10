@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import "./styles.scss";
 import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import NewsCard from "../../components/newsCard/NewsCard";
@@ -10,7 +9,7 @@ import TopPicks from "../../components/topPicks/TopPicks";
 import BusinessNewsComponent from "../../components/businessNewsComponent/BusinessNewsComponent";
 import SportsAndTechNewsComponent from "../../components/sportsAndTechNewsComponent/SportsAndTechNewsComponent";
 import MovieNewsComponent from "../../components/movieNewsComponent/MovieNewsComponent";
-import Footer from "../../components/footer/Footer";
+import LoadingBar from "react-top-loading-bar";
 
 const Home = () => {
   const tempArray = [
@@ -341,7 +340,7 @@ const Home = () => {
     },
   ];
   //creating loading state
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(0);
   //creating articles state
   const [articles, setArticles] = useState([
     {
@@ -704,11 +703,15 @@ const Home = () => {
       const apiUrl = `https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=JWDQzBXAopU3ZInzJRMA2r70nTB9HKir`;
       try {
         const response = await fetch(apiUrl);
+        setLoading(20);
         //parsing data to json format
         const json = await response.json();
+        setLoading(40);
         const parsedData = json.results;
+        setLoading(60);
         // console.log(parsedData);
         arrayUpdateFunction(parsedData);
+        setLoading(100);
       } catch (error) {
         console.log("Error: ", error);
       }
@@ -724,6 +727,11 @@ const Home = () => {
 
   return (
     <>
+      <LoadingBar
+        color="#f11946"
+        progress={loading}
+        onLoaderFinished={() => setLoading(0)}
+      />
       <ContentWrapper>
         {/* TOP PICKS SECTION */}
         <TopPicks usArticlesArray={usArticles} />
@@ -732,9 +740,6 @@ const Home = () => {
         <div className="worldNews mx-auto my-5">
           <div className="worldNewsTitle text-right mb-3">
             <h3>World News</h3>
-            <button type="button" className="btn btn-danger btn-sm">
-              See All
-            </button>
           </div>
 
           {/*CARDS */}
@@ -745,9 +750,6 @@ const Home = () => {
         <div className="businessNews">
           <div className="worldNewsTitle">
             <h3>Business News</h3>
-            <button type="button" className="btn btn-danger btn-sm">
-              See All
-            </button>
           </div>
 
           {/* BUSINESS NEWS CARDS */}
@@ -761,9 +763,8 @@ const Home = () => {
         />
 
         {/* MOVIES UPDATES */}
-        {/* <MovieNewsComponent moviesArticles={moviesArticles} /> */}
+        <MovieNewsComponent moviesArticles={moviesArticles} />
       </ContentWrapper>
-
     </>
   );
 };
