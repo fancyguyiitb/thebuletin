@@ -10,9 +10,9 @@ const MovieNewsComponent = (props) => {
     <>
       <div className="worldNewsTitle mb-3">
         <h3>Latest in Movies</h3>
-        <button type="button" className="btn btn-dark">
+        {/* <button type="button" className="btn btn-dark">
           See All
-        </button>
+        </button> */}
       </div>
 
       {/* CAROUSEL SECTION */}

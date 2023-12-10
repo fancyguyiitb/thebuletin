@@ -10,6 +10,7 @@ import BusinessNewsComponent from "../../components/businessNewsComponent/Busine
 import SportsAndTechNewsComponent from "../../components/sportsAndTechNewsComponent/SportsAndTechNewsComponent";
 import MovieNewsComponent from "../../components/movieNewsComponent/MovieNewsComponent";
 import LoadingBar from "react-top-loading-bar";
+import Loading from "../../components/loading/Loading";
 
 const Home = () => {
   const tempArray = [
@@ -341,6 +342,8 @@ const Home = () => {
   ];
   //creating loading state
   const [loading, setLoading] = useState(0);
+  //creating loading state
+  const [boolLoading, setBoolLoading] = useState(false);
   //creating articles state
   const [articles, setArticles] = useState([
     {
@@ -700,6 +703,7 @@ const Home = () => {
   //firing the getApiData function as soon as page loads
   useEffect(() => {
     const fetchData = async (category, arrayUpdateFunction) => {
+      setBoolLoading(true);
       const apiUrl = `https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=JWDQzBXAopU3ZInzJRMA2r70nTB9HKir`;
       try {
         const response = await fetch(apiUrl);
@@ -715,6 +719,7 @@ const Home = () => {
       } catch (error) {
         console.log("Error: ", error);
       }
+      setBoolLoading(false);
     };
 
     fetchData("world", setArticles);
@@ -732,7 +737,9 @@ const Home = () => {
         progress={loading}
         onLoaderFinished={() => setLoading(0)}
       />
-      <ContentWrapper>
+      {boolLoading && <Loading/>}
+      {!boolLoading && <ContentWrapper>
+        
         {/* TOP PICKS SECTION */}
         <TopPicks usArticlesArray={usArticles} />
 
@@ -764,7 +771,7 @@ const Home = () => {
 
         {/* MOVIES UPDATES */}
         <MovieNewsComponent moviesArticles={moviesArticles} />
-      </ContentWrapper>
+      </ContentWrapper>}
     </>
   );
 };

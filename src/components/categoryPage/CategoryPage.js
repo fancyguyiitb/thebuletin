@@ -4,6 +4,7 @@ import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import { useState, useEffect } from "react";
 import cardPlaceholder from "../../assets/placeholder286x180.png";
 import LoadingBar from "react-top-loading-bar";
+import Loading from "../../components/loading/Loading";
 
 const CategoryPage = (props) => {
     let {category, title} = props;
@@ -45,7 +46,8 @@ const CategoryPage = (props) => {
         progress={loading}
         onLoaderFinished={() => setLoading(0)}
       />
-      <ContentWrapper>
+      {boolLoading && <Loading/>}
+      {!boolLoading && <ContentWrapper>
         <h5 className="pageHeading">Latest in {title}</h5>
 
         <div className="row my-3">
@@ -173,7 +175,7 @@ const CategoryPage = (props) => {
             })}
           </div>
         </div>
-      </ContentWrapper>
+      </ContentWrapper>}
     </>
   );
 };
