@@ -75,6 +75,14 @@ const TopPicks = (props) => {
             <div className="carousel-caption d-none d-md-block">
               <h5>{props?.usArticlesArray[0]?.title}</h5>
               <p>{props?.usArticlesArray[0]?.abstract}</p>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={props?.usArticlesArray[0]?.url}
+                className="btn btn-danger btn-sm"
+              >
+                Read More
+              </a>
             </div>
           </div>
           <div className="carousel-item">
@@ -89,6 +97,14 @@ const TopPicks = (props) => {
             <div className="carousel-caption d-none d-md-block">
               <h5>{props?.usArticlesArray[1]?.title}</h5>
               <p>{props?.usArticlesArray[1]?.abstract}</p>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={props?.usArticlesArray[0]?.url}
+                className="btn btn-danger btn-sm"
+              >
+                Read More
+              </a>
             </div>
           </div>
           <div className="carousel-item">
@@ -100,6 +116,14 @@ const TopPicks = (props) => {
             <div className="carousel-caption d-none d-md-block">
               <h5>{props?.usArticlesArray[2]?.title}</h5>
               <p>{props?.usArticlesArray[2]?.abstract}</p>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={props?.usArticlesArray[0]?.url}
+                className="btn btn-danger btn-sm"
+              >
+                Read More
+              </a>
             </div>
           </div>
           <div className="carousel-item">
@@ -111,6 +135,14 @@ const TopPicks = (props) => {
             <div className="carousel-caption d-none d-md-block">
               <h5>{props?.usArticlesArray[3]?.title}</h5>
               <p>{props?.usArticlesArray[3]?.abstract}</p>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={props?.usArticlesArray[0]?.url}
+                className="btn btn-danger btn-sm"
+              >
+                Read More
+              </a>
             </div>
           </div>
           <div className="carousel-item">
@@ -122,6 +154,14 @@ const TopPicks = (props) => {
             <div className="carousel-caption d-none d-md-block">
               <h5>{props?.usArticlesArray[4]?.title}</h5>
               <p>{props?.usArticlesArray[4]?.abstract}</p>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={props?.usArticlesArray[0]?.url}
+                className="btn btn-danger btn-sm"
+              >
+                Read More
+              </a>
             </div>
           </div>
         </div>

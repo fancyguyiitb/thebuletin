@@ -7,7 +7,7 @@ const BusinessNewsComponent = (props) => {
   let { businessArticlesArray } = props;
 
   return (
-    <div className="row">
+    <div className="row my-3">
       <div className="col-md-4">
         <div
           className="card mb-3 businessNewsCard"
@@ -34,7 +34,7 @@ const BusinessNewsComponent = (props) => {
                   rel="noreferrer"
                   target="_blank"
                   href={businessArticlesArray[2]?.url}
-                  className="btn btn-outline-success btn-sm"
+                  className="btn btn-outline-danger btn-sm"
                 >
                   Read More
                 </a>
@@ -60,7 +60,7 @@ const BusinessNewsComponent = (props) => {
               rel="noreferrer"
               target="_blank"
               href={businessArticlesArray[2]?.url}
-              className="btn btn-success btn-sm"
+              className="btn btn-danger btn-sm"
             >
               Read More
             </a>
@@ -94,7 +94,7 @@ const BusinessNewsComponent = (props) => {
                   rel="noreferrer"
                   target="_blank"
                   href={businessArticlesArray[2]?.url}
-                  className="btn btn-outline-success btn-sm"
+                  className="btn btn-outline-danger btn-sm"
                 >
                   Read More
                 </a>
@@ -130,7 +130,7 @@ const BusinessNewsComponent = (props) => {
                   rel="noreferrer"
                   target="_blank"
                   href={businessArticlesArray[3]?.url}
-                  className="btn btn-outline-success btn-sm"
+                  className="btn btn-outline-danger btn-sm"
                 >
                   Read More
                 </a>

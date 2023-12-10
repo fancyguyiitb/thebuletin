@@ -1,3 +1,7 @@
+.carousel {
+  margin-bottom: 30px;
+}
+
 .carousel img {
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -13,7 +17,7 @@
     // background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(""); /* The least supported option. */
     object-fit: cover;
     width: 100%;
-    height: 450px;
+    height: 400px;
     z-index: 0;
 }
 .overlay {
@@ -27,5 +31,11 @@
     // z-index: 1;
   }
   .carousel-caption {
-    text-shadow: 2px 4px 25px rgba(0,0,0,0.92);
+    text-shadow: 4px 5px 11px #000000;
   }
+
+.carousel-caption h5 {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 700;
+}

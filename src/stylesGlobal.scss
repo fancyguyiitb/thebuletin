@@ -11,7 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
   --font-family-heading: 'Lora', serif;
@@ -27,7 +28,7 @@ code {
   --black: #000000;
   --black-light: rgb(20, 21, 23);
   --black-lighter: #272626;
-  --red: #ff2200;
+  --red: #EF4040;
   --orange: #f89e00;
   /* --gradient: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%); */
 }
@@ -40,7 +41,6 @@ code {
 
 body {
   background-color: var(--white);
-  font-family: var(--font-family-text);
 }
 
 /* ::-webkit-scrollbar {

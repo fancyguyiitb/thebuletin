@@ -1,6 +1,15 @@
+.card-title{
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+.card-text {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
 .carouselCard {
   border: none;
-  height: 400px;
+  height: 460px;
   margin-bottom: 20px;
 }
 .carouselCardBody {
@@ -8,9 +17,14 @@
 //   padding-bottom: 20px;
 }
 .carouselCardImg {
-  padding-bottom: 10px;
-  width: 286px;
+  margin-bottom: 10px;
+  width: 267.5px;
   height: 180px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .carouselCardEndIcons {
   // display: flex;
@@ -18,4 +32,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.readMoreButton {
+  width: 100px;
 }

@@ -8,7 +8,7 @@ const MovieNewsComponent = (props) => {
 
   return (
     <>
-      <div className="worldNewsTitle">
+      <div className="worldNewsTitle mb-3">
         <h3>Latest in Movies</h3>
         <button type="button" className="btn btn-dark">
           See All
@@ -43,7 +43,7 @@ const MovieNewsComponent = (props) => {
                   <div className="col-12">
                     <div className="card mb-3 businessNewsCard">
                       <div className="row no-gutters">
-                        <div className="col-md-6 fill">
+                        <div className="col-md-4 fill">
                           <img
                             src={moviesArticles[0]?.multimedia[1].url}
                             className="card-img vertcialCardImg"
@@ -52,12 +52,12 @@ const MovieNewsComponent = (props) => {
                         </div>
                         <div className="col-md-6">
                           <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title fs-2">
                               {moviesArticles[0]?.title}
                             </h5>
                             <p className="card-text">
-                              {moviesArticles[0]?.abstract.slice(0, 300) +
-                                "..."}
+                              {moviesArticles[0]?.abstract +
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis risus ut metus ullamcorper, a consequat quam vulputate. Nulla vitae turpis id ante imperdiet ultrices. Ut egestas elit in accumsan tincidunt. Phasellus faucibus nisi congue, sollicitudin urna ac, suscipit dolor."}
                             </p>
                             <p className="card-text">
                               {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
@@ -65,8 +65,8 @@ const MovieNewsComponent = (props) => {
                             <a
                               rel="noreferrer"
                               target="_blank"
-                              href="/"
-                              className="btn btn-outline-success btn-sm"
+                              href={moviesArticles[0]?.url}
+                              className="btn btn-outline-danger btn-sm"
                             >
                               Read More
                             </a>
@@ -91,12 +91,12 @@ const MovieNewsComponent = (props) => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title fs-2">
                               {moviesArticles[1]?.title}
                             </h5>
                             <p className="card-text">
-                              {moviesArticles[1]?.abstract.slice(0, 300) +
-                                "..."}
+                              {moviesArticles[1]?.abstract +
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis risus ut metus ullamcorper, a consequat quam vulputate. Nulla vitae turpis id ante imperdiet ultrices. Ut egestas elit in accumsan tincidunt. Phasellus faucibus nisi congue, sollicitudin urna ac, suscipit dolor."}
                             </p>
                             <p className="card-text">
                               {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
@@ -104,8 +104,8 @@ const MovieNewsComponent = (props) => {
                             <a
                               rel="noreferrer"
                               target="_blank"
-                              href="/"
-                              className="btn btn-outline-success btn-sm"
+                              href={moviesArticles[1]?.url}
+                              className="btn btn-outline-danger btn-sm"
                             >
                               Read More
                             </a>
@@ -130,12 +130,12 @@ const MovieNewsComponent = (props) => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title fs-2">
                               {moviesArticles[2]?.title}
                             </h5>
                             <p className="card-text">
-                              {moviesArticles[2]?.abstract.slice(0, 300) +
-                                "..."}
+                              {moviesArticles[2]?.abstract +
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis risus ut metus ullamcorper, a consequat quam vulputate. Nulla vitae turpis id ante imperdiet ultrices. Ut egestas elit in accumsan tincidunt. Phasellus faucibus nisi congue, sollicitudin urna ac, suscipit dolor."}
                             </p>
                             <p className="card-text">
                               {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
@@ -144,7 +144,7 @@ const MovieNewsComponent = (props) => {
                               rel="noreferrer"
                               target="_blank"
                               href="/"
-                              className="btn btn-outline-success btn-sm"
+                              className="btn btn-outline-danger btn-sm"
                             >
                               Read More
                             </a>
@@ -169,12 +169,12 @@ const MovieNewsComponent = (props) => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title fs-2">
                               {moviesArticles[3]?.title}
                             </h5>
                             <p className="card-text">
-                              {moviesArticles[3]?.abstract.slice(0, 300) +
-                                "..."}
+                              {moviesArticles[3]?.abstract +
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis risus ut metus ullamcorper, a consequat quam vulputate. Nulla vitae turpis id ante imperdiet ultrices. Ut egestas elit in accumsan tincidunt. Phasellus faucibus nisi congue, sollicitudin urna ac, suscipit dolor."}
                             </p>
                             <p className="card-text">
                               {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
@@ -183,7 +183,7 @@ const MovieNewsComponent = (props) => {
                               rel="noreferrer"
                               target="_blank"
                               href="/"
-                              className="btn btn-outline-success btn-sm"
+                              className="btn btn-outline-danger btn-sm"
                             >
                               Read More
                             </a>
@@ -208,12 +208,12 @@ const MovieNewsComponent = (props) => {
                         </div>
                         <div className="col-md-8">
                           <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title fs-2">
                               {moviesArticles[4]?.title}
                             </h5>
                             <p className="card-text">
-                              {moviesArticles[4]?.abstract.slice(0, 300) +
-                                "..."}
+                              {moviesArticles[4]?.abstract +
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis risus ut metus ullamcorper, a consequat quam vulputate. Nulla vitae turpis id ante imperdiet ultrices. Ut egestas elit in accumsan tincidunt. Phasellus faucibus nisi congue, sollicitudin urna ac, suscipit dolor."}
                             </p>
                             <p className="card-text">
                               {/* <small className="text-muted">Published: {businessArticlesArray[1]?.published_date}</small> */}
@@ -222,7 +222,7 @@ const MovieNewsComponent = (props) => {
                               rel="noreferrer"
                               target="_blank"
                               href="/"
-                              className="btn btn-outline-success btn-sm"
+                              className="btn btn-outline-danger btn-sm"
                             >
                               Read More
                             </a>

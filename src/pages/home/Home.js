@@ -729,10 +729,10 @@ const Home = () => {
         <TopPicks usArticlesArray={usArticles} />
 
         {/* WORLD NEWS SECTION */}
-        <div className="worldNews">
-          <div className="worldNewsTitle">
+        <div className="worldNews mx-auto my-5">
+          <div className="worldNewsTitle text-right mb-3">
             <h3>World News</h3>
-            <button type="button" className="btn btn-dark">
+            <button type="button" className="btn btn-danger btn-sm">
               See All
             </button>
           </div>
@@ -745,7 +745,7 @@ const Home = () => {
         <div className="businessNews">
           <div className="worldNewsTitle">
             <h3>Business News</h3>
-            <button type="button" className="btn btn-dark">
+            <button type="button" className="btn btn-danger btn-sm">
               See All
             </button>
           </div>
@@ -761,11 +761,9 @@ const Home = () => {
         />
 
         {/* MOVIES UPDATES */}
-        <MovieNewsComponent moviesArticles={moviesArticles} />
+        {/* <MovieNewsComponent moviesArticles={moviesArticles} /> */}
       </ContentWrapper>
 
-      {/* FOOTER */}
-      <Footer />
     </>
   );
 };
